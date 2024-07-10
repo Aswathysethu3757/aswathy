@@ -1,0 +1,56 @@
+Angular
+-------------------------------------
+npm install -g @angular/cli
+
+ng help
+
+ng version
+? Would you like to add Angular routing? Yes
+? Which stylesheet format would you like to use? SCSS
+
+cd my-dream-app
+
+ng serve
+
+C:\Dotnetcore\Aswathy\Angular\my-dream-app\node_modules\@angular-devkit\build-angular\src\builders\dev-server\schema.json
+
+ng g component capg
+
+
+
+<ng-template [ngIf]="show" [ngIfElse]="invisible">
+
+  <div class="name">{{show}}</div>
+
+</ng-template>
+
+<ng-template #invisible> I am representing not show</ng-template>
+
+
+
+<div *ngIf="show; else elseBlock">Text to show</div>
+
+<ng-template #elseBlock>Alternate text while primary text is hidden</ng-template>
+
+
+
+<button (click)="show = !show">{{show ? 'hide' : 'show'}}</button>
+show = {{show}}   
+<br>
+
+
+weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+
+<label>Days of the week - *ngFor</label>
+
+<select id="weekdays" required [(ngModel)]="weekdays" name="weekdays">
+
+  <option *ngFor="let wkd of weekdays" [value]="wkd">{{ wkd }}</option>
+
+</select>
+
+ <br>
+
+
+
